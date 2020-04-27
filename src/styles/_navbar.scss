@@ -1,0 +1,26 @@
+nav {
+   background: lightcoral;
+   min-height: 10vh;
+   padding-left: 30px;
+   color: white;
+   display: flex;
+   align-items: center;
+}
+
+.navbar-logo {
+   height: 5.5vh;
+}
+
+.navbar-links {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   list-style: none;
+   font-size: 22px;
+   font-weight: 600;
+}
+
+li {
+   color: black;
+   margin-left: 50px;
+}

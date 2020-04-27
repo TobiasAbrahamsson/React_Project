@@ -1,0 +1,138 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.App {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.15)), to(rgba(0, 0, 0, 0.15))), radial-gradient(at top center, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.4) 120%) #989898;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%), radial-gradient(at top center, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.4) 120%) #989898;
+  background-blend-mode: multiply,multiply;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+nav {
+  background: lightcoral;
+  min-height: 10vh;
+  padding-left: 30px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar-logo {
+  height: 5.5vh;
+}
+
+.navbar-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+li {
+  color: black;
+  margin-left: 50px;
+}
+
+.card-container {
+  margin: 20px;
+}
+
+.card {
+  background: white;
+  width: 320px;
+  height: 400px;
+  border-radius: 15px;
+}
+
+.card img {
+  border-radius: 15px 15px 0 0;
+}
+
+.card-info {
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding-bottom: 15px;
+  cursor: default;
+}
+
+.card-info h5 {
+  font-size: 25px;
+}
+
+.card-book {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card-book button {
+  background: lightcoral;
+  height: 45px;
+  width: 110px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 23px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-right: 20px;
+  outline: none;
+  cursor: pointer;
+}
+
+.card-book button:hover {
+  background: #b35c5c;
+}
+
+.card-book div {
+  background: lightgray;
+  height: 45px;
+  width: 110px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 10px;
+}
+
+.card-book div p {
+  font-size: 23px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+/*# sourceMappingURL=style.css.map */
