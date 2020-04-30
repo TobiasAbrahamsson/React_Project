@@ -3,9 +3,13 @@
    width: 320px;
    height: 400px;
    border-radius: 15px;
+   box-shadow: 10px 10px 15px 0px rgba(0,0,0,0.55);
+   margin: 20px;
 
    img {
       border-radius: 15px 15px 0 0;
+      width: 320px;
+      height: 200px;
    }
 }
 
@@ -54,9 +58,15 @@
       border-radius: 10px;
 
       p {
-      font-size: 23px;
-      font-weight: 600;
-      letter-spacing: 1px;
+         font-size: 17px;
+         font-weight: 400;
+         letter-spacing: 1px;
+         span {
+            font-size: 23px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            margin-right: 3px;
+         }
       }
    }
 }

@@ -3,7 +3,6 @@
           box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Montserrat", sans-serif;
 }
 
 .App {
@@ -12,6 +11,7 @@
   background-blend-mode: multiply,multiply;
   min-height: 100vh;
   overflow: hidden;
+  font-family: "Montserrat", sans-serif;
 }
 
 nav {
@@ -54,15 +54,32 @@ li {
   margin: 20px;
 }
 
+.products {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  overflow: auto;
+}
+
 .card {
   background: white;
   width: 320px;
   height: 400px;
   border-radius: 15px;
+  -webkit-box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.55);
+          box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.55);
+  margin: 20px;
 }
 
 .card img {
   border-radius: 15px 15px 0 0;
+  width: 320px;
+  height: 200px;
 }
 
 .card-info {
@@ -131,8 +148,15 @@ li {
 }
 
 .card-book div p {
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.card-book div p span {
   font-size: 23px;
   font-weight: 600;
   letter-spacing: 1px;
+  margin-right: 3px;
 }
 /*# sourceMappingURL=style.css.map */
