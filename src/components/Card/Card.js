@@ -8,7 +8,7 @@ const Card = (props) => {
             <h5>{props.title}</h5>
             <p>{props.description}</p>
             <div className="card-book">
-               <button><i class="fas fa-cart-plus"></i></button>
+               <button><i className="fas fa-cart-plus"></i></button>
                <div>
                   <p><span>{props.price}</span>sek</p>
                </div>

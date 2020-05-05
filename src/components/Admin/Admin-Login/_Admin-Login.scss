@@ -1,0 +1,116 @@
+.adminLogin {
+   height: 90vh;
+   display: flex;
+   justify-content: center;
+
+   div {
+      background: white;
+      width: 80%;
+      max-width: 400px;
+      height: 80vh;
+      margin-top: 5vh;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 10px 10px 15px 0px rgba(0,0,0,0.55);
+
+      h1 {
+         color: gray;
+         font-size: 30px;
+         font-weight: 800;
+         text-transform: uppercase;
+         margin-top: 8vh;
+      }
+
+      form {
+         width: 70%;
+         margin: 8vh 0 0 15%;
+         display: flex;
+         flex-direction: column;
+
+         #loginEmailIcon {
+            color: gray;
+            font-size: 4vh;
+            position: absolute;
+            margin: 1.5vh 0 0 3vh;
+         }
+
+         #loginPasswordIcon {
+            color: gray;
+            font-size: 4vh;
+            position: absolute;
+            margin: 10.5vh 0 0 3vh;
+         }
+
+         #registerUsernameIcon {
+            color: gray;
+            font-size: 4vh;
+            position: absolute;
+            margin: 1.5vh 0 0 3vh;
+         }
+
+         #registerEmailIcon {
+            color: gray;
+            font-size: 4vh;
+            position: absolute;
+            margin: 10.5vh 0 0 3vh;
+         }
+
+         #registerPasswordIcon {
+            color: gray;
+            font-size: 4vh;
+            position: absolute;
+            margin: 19.5vh 0 0 3vh;
+         }
+
+         input {
+            background: #E6E6E6;
+            width: 100%;
+            height: 7vh;
+            border: none;
+            border-radius: 3px;
+            margin-bottom: 2.5vh;
+            padding-left: 9vh;
+            color: gray;
+            font-size: 2.5vh;
+            font-weight: 600;
+            letter-spacing: 1.5px;
+            outline: none;
+         }
+
+         .loginPassword {
+            font-size: 3.5vh;
+            letter-spacing: 2px;
+         }
+
+         button {
+            background: lightcoral;
+            width: 100%;
+            height: 7vh;
+            border: none;
+            border-radius: 3px;
+            font-size: 2.5vh;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: white;
+         }
+      }
+
+      .login {
+         background: white;
+         border: none;
+         color: rgb(167, 167, 167);
+         margin-top: 26vh;
+      }
+      .register {
+         background: white;
+         border: none;
+         color: rgb(167, 167, 167);
+         margin-top: 16.5vh;
+      }
+
+      .buttonSpan {
+         text-decoration: underline;
+         cursor: pointer;
+      }
+   }
+}

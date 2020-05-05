@@ -10,6 +10,7 @@ function Navbar() {
             <Link style={{ textDecoration: 'none' }} to="/"><li>Home</li></Link>
             <Link style={{ textDecoration: 'none' }} to="/products"><li>Products</li></Link>
             <Link style={{ textDecoration: 'none' }} to="/bookings"><li>My Bookings</li></Link>
+            <Link style={{ textDecoration: 'none' }} to="/adminPage"><li>Admin Page</li></Link>
          </ul>
       </nav>
    );
