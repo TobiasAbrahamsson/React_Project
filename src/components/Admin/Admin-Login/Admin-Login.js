@@ -67,7 +67,7 @@ class AdminLogin extends Component {
                   <h1>Login</h1>
                   <form onSubmit={this.onSubmitLogin.bind(this)}>
                      <i id="loginEmailIcon" className="fas fa-envelope"></i>
-                     <input type="email" name="email" placeholder="Email" />
+                     <input type="email" name="email" placeholder="Email" spellCheck="false" />
                      <i id="loginPasswordIcon" className="fas fa-lock"></i>
                      <input className="loginPassword" type="password" name="password" placeholder="••••••••" />
                      <button>Login</button>
@@ -81,9 +81,9 @@ class AdminLogin extends Component {
                   <h1>Register</h1>
                   <form onSubmit={this.onSubmitRegister.bind(this)}>
                      <i id="registerUsernameIcon" className="fas fa-user"></i>
-                     <input type="text" name="username" placeholder="Username" />
+                     <input type="text" name="username" placeholder="Username" spellCheck="false" />
                      <i id="registerEmailIcon" className="fas fa-envelope"></i>
-                     <input type="email" name="email" placeholder="Email" />
+                     <input type="email" name="email" placeholder="Email" spellCheck="false" />
                      <i id="registerPasswordIcon" className="fas fa-lock"></i>
                      <input type="password" name="password" placeholder="Password" />
                      <button>Register</button>

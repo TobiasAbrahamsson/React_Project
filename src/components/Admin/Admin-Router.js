@@ -1,7 +1,7 @@
 import React from 'react';
-import AdminNavbar from './Admin-Navbar';
+import AdminNavbar from './Admin-Navbar/Admin-Navbar';
 import AdminProfile from './Admin-Profile';
-import AdminAddProduct from './Admin-AddProduct';
+import AdminAddProduct from './Admin-AddProduct/Admin-AddProduct';
 import {
    BrowserRouter as Router,
    Switch,

@@ -19,6 +19,7 @@
          font-weight: 800;
          text-transform: uppercase;
          margin-top: 8vh;
+         cursor: default;
       }
 
       form {
@@ -92,19 +93,21 @@
             font-weight: 600;
             text-transform: uppercase;
             color: white;
+            outline: none;
+            cursor: pointer;
          }
       }
 
       .login {
          background: white;
          border: none;
-         color: rgb(167, 167, 167);
+         color: rgb(145, 145, 145);
          margin-top: 26vh;
       }
       .register {
          background: white;
          border: none;
-         color: rgb(167, 167, 167);
+         color: rgb(145, 145, 145);
          margin-top: 16.5vh;
       }
 

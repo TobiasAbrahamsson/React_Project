@@ -1,4 +1,4 @@
-nav {
+.mainNavbar {
    background: lightcoral;
    min-height: 10vh;
    padding-left: 30px;
@@ -7,11 +7,11 @@ nav {
    align-items: center;
 }
 
-.navbar-logo {
+.navbarLogo {
    height: 5.5vh;
 }
 
-.navbar-links {
+.navbarLinks {
    display: flex;
    justify-content: space-around;
    align-items: center;

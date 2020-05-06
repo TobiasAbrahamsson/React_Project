@@ -14,7 +14,7 @@
   font-family: "Montserrat", sans-serif;
 }
 
-nav {
+.mainNavbar {
   background: lightcoral;
   min-height: 10vh;
   padding-left: 30px;
@@ -27,11 +27,11 @@ nav {
           align-items: center;
 }
 
-.navbar-logo {
+.navbarLogo {
   height: 5.5vh;
 }
 
-.navbar-links {
+.navbarLinks {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -188,6 +188,7 @@ li {
   font-weight: 800;
   text-transform: uppercase;
   margin-top: 8vh;
+  cursor: default;
 }
 
 .adminLogin div form {
@@ -267,24 +268,241 @@ li {
   font-weight: 600;
   text-transform: uppercase;
   color: white;
+  outline: none;
+  cursor: pointer;
 }
 
 .adminLogin div .login {
   background: white;
   border: none;
-  color: #a7a7a7;
+  color: #919191;
   margin-top: 26vh;
 }
 
 .adminLogin div .register {
   background: white;
   border: none;
-  color: #a7a7a7;
+  color: #919191;
   margin-top: 16.5vh;
 }
 
 .adminLogin div .buttonSpan {
   text-decoration: underline;
   cursor: pointer;
+}
+
+.adminNavbar {
+  background: lightcoral;
+  height: 6vh;
+  width: 70%;
+  margin: 0.5vh 0 0 15%;
+  border-radius: 0 0 40px 40px;
+}
+
+.adminNavbar ul {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.adminAddProduct {
+  height: 83.5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.adminAddProduct .adminAddProductForm {
+  background: white;
+  width: 80%;
+  max-width: 400px;
+  height: 75vh;
+  border-radius: 10px;
+  text-align: center;
+  -webkit-box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.55);
+          box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.55);
+  margin-top: 3.5vh;
+}
+
+.adminAddProduct .adminAddProductForm h1 {
+  color: gray;
+  font-size: 30px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-top: 4vh;
+  cursor: default;
+}
+
+.adminAddProduct .adminAddProductForm form {
+  width: 70%;
+  margin: 4vh 0 0 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.adminAddProduct .adminAddProductForm form #addProductTitleIcon {
+  color: gray;
+  font-size: 3.5vh;
+  position: absolute;
+  margin: 1.5vh 0 0 3vh;
+}
+
+.adminAddProduct .adminAddProductForm form #addProductDescriptionIcon {
+  color: gray;
+  font-size: 3.5vh;
+  position: absolute;
+  margin: 10.5vh 0 0 3vh;
+}
+
+.adminAddProduct .adminAddProductForm form #addProductPriceIcon {
+  color: gray;
+  font-size: 3.5vh;
+  position: absolute;
+  margin: 28.5vh 0 0 4vh;
+}
+
+.adminAddProduct .adminAddProductForm form #addProductFileIcon {
+  color: gray;
+  font-size: 3.5vh;
+  margin: 0 1.5vh 0 0vh;
+}
+
+.adminAddProduct .adminAddProductForm form input {
+  background: #E6E6E6;
+  width: 100%;
+  height: 7vh;
+  border: none;
+  border-radius: 3px;
+  margin-bottom: 2.5vh;
+  padding-left: 9vh;
+  color: gray;
+  font-size: 2.5vh;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  outline: none;
+}
+
+.adminAddProduct .adminAddProductForm form textarea {
+  background: #E6E6E6;
+  width: 100%;
+  height: 15vh;
+  border: none;
+  color: gray;
+  font-size: 2.5vh;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  outline: none;
+  padding: 2vh 0 0 9vh;
+  font-family: "Montserrat", sans-serif;
+  resize: none;
+  margin-bottom: 2.5vh;
+}
+
+.adminAddProduct .adminAddProductForm form input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.adminAddProduct .adminAddProductForm form label {
+  background: #E6E6E6;
+  padding: 1.8vh 5.5vh 1.8vh 1.8vh;
+  border-radius: 3px;
+  margin-bottom: 2.5vh;
+  color: gray;
+  font-size: 2.5vh;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+}
+
+.adminAddProduct .adminAddProductForm form .productFileInput {
+  display: none;
+}
+
+.adminAddProduct .adminAddProductForm form div {
+  height: 100%;
+  width: 110%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.adminAddProduct .adminAddProductForm form div h2 {
+  background: #E6E6E6;
+  width: 91%;
+  padding: 2.2vh;
+  border-radius: 3px;
+  margin-bottom: 2.5vh;
+  color: gray;
+  font-size: 2.5vh;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  cursor: default;
+}
+
+.adminAddProduct .adminAddProductForm form div i {
+  font-size: 3.5vh;
+  margin: 1.5vh 0 0 1vh;
+  cursor: pointer;
+}
+
+.adminAddProduct .adminAddProductForm form button {
+  background: lightcoral;
+  width: 100%;
+  height: 7vh;
+  border: none;
+  border-radius: 3px;
+  font-size: 2.5vh;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: white;
+  outline: none;
+  cursor: pointer;
+}
+
+.pageNotFound {
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: default;
+}
+
+.pageNotFound h1 {
+  font-size: 45vh;
+  font-weight: 500;
+  margin-top: -13vh;
+}
+
+.pageNotFound p {
+  font-size: 10vh;
+  text-transform: uppercase;
+  margin-top: -8vh;
 }
 /*# sourceMappingURL=style.css.map */
