@@ -6,8 +6,10 @@ class FirebaseTest extends Component {
 
    //read data form firebase
    onClickFirebase() {
-      const docRef = firebase.firestore().collection("booking").doc("info")
-      const docRef2 = firebase.firestore().collection("booking").doc("info2")
+
+      const db = firebase.firestore();
+      const docRef = db.collection("booking").doc("info")
+      const docRef2 = db.collection("booking").doc("info2")
 
       docRef.get().then(booking => {
          if (booking.exists) {

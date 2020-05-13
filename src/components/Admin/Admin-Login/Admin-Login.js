@@ -53,6 +53,7 @@ class AdminLogin extends Component {
             console.log('User token', response.data.jwt);
 
             this.props.userCredential(response.data.user, response.data.jwt);
+            window.location.reload(false);
          })
          .catch(error => {
             // Handle error.

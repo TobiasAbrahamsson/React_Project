@@ -51,8 +51,110 @@ li {
   margin-left: 50px;
 }
 
-.card-container {
+.home {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.serviceCard {
+  height: 200px;
+  width: 300px;
   margin: 20px;
+  overflow: hidden;
+  cursor: default;
+  border-radius: 10px;
+}
+
+.serviceCard img {
+  position: absolute;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.serviceCardBackgoundOverlay {
+  background: black;
+  opacity: 0.5;
+  height: 200px;
+  width: 300px;
+  position: absolute;
+  border-radius: 10px;
+}
+
+.serviceCardInfo {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.serviceCardInfo h5 {
+  color: white;
+  margin-top: 50px;
+  font-size: 30px;
+}
+
+.serviceCardInfo p {
+  color: white;
+  margin-top: 7px;
+  font-size: 15px;
+}
+
+.serviceCardBook {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  width: 100%;
+  bottom: 70px;
+}
+
+.serviceCardBook button {
+  background: lightcoral;
+  height: 40px;
+  width: 100px;
+  color: white;
+  font-size: 21px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 20px;
+  outline: none;
+  cursor: pointer;
+}
+
+.serviceCardBook button:hover {
+  background: #b35c5c;
+}
+
+.serviceCardBook div {
+  background: lightgray;
+  height: 40px;
+  width: 100px;
+  border-radius: 10px;
+}
+
+.serviceCardBook div p {
+  color: black;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-top: 8px;
+}
+
+.serviceCardBook div p span {
+  font-size: 21px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-right: 3px;
 }
 
 .products {
@@ -112,8 +214,9 @@ li {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: middle;
+      -ms-flex-pack: middle;
+          justify-content: middle;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -124,15 +227,19 @@ li {
 
 .card-info h5 {
   font-size: 25px;
+  margin: 5px 0 10px 0;
 }
 
-.card-book {
+.card-buy {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: absolute;
+  height: 200px;
+  padding-top: 133px;
 }
 
-.card-book button {
+.card-buy button {
   background: lightcoral;
   height: 45px;
   width: 110px;
@@ -147,11 +254,11 @@ li {
   cursor: pointer;
 }
 
-.card-book button:hover {
+.card-buy button:hover {
   background: #b35c5c;
 }
 
-.card-book div {
+.card-buy div {
   background: lightgray;
   height: 45px;
   width: 110px;
@@ -168,13 +275,13 @@ li {
   border-radius: 10px;
 }
 
-.card-book div p {
+.card-buy div p {
   font-size: 17px;
   font-weight: 400;
   letter-spacing: 1px;
 }
 
-.card-book div p span {
+.card-buy div p span {
   font-size: 23px;
   font-weight: 600;
   letter-spacing: 1px;
@@ -619,6 +726,7 @@ li {
 }
 
 .editProducts .tableEdit i {
+  color: black;
   cursor: pointer;
 }
 

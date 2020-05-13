@@ -1,0 +1,88 @@
+.serviceCard {
+   height: 200px;
+   width: 300px;
+   margin: 20px;
+   overflow: hidden;
+   cursor: default;
+   border-radius: 10px;
+   
+   img {
+      position: absolute;
+      height: 200px;
+      border-radius: 10px;
+   }
+}
+
+.serviceCardBackgoundOverlay {
+   background: black;
+   opacity: 0.5;
+   height: 200px;
+   width: 300px;
+   position: absolute;
+   border-radius: 10px;
+}
+
+.serviceCardInfo {
+   height: 100%;
+   width: 100%;
+   text-align: center;
+   position: relative;
+
+   h5 {
+      color: white;
+      margin-top: 50px;
+      font-size: 30px;
+   }
+
+   p {
+      color: white;
+      margin-top:7px;
+      font-size: 15px;
+   }
+}
+
+.serviceCardBook {
+   display: flex;
+   justify-content: center;
+   position: absolute;
+   width: 100%;
+   bottom: 70px;
+
+   button {
+      background: $primary;
+      height: 40px;
+      width: 100px;
+      color: white;
+      font-size: 21px;
+      border: none;
+      border-radius: 5px;
+      margin-right: 20px;
+      outline: none;
+      cursor: pointer;
+      &:hover {
+         background: rgb(179, 92, 92);
+      }
+   }
+
+   div {
+      background: lightgray;
+      height: 40px;
+      width: 100px;
+      border-radius: 10px;
+      
+      p {
+         color: black;
+         font-size: 16px;
+         font-weight: 400;
+         letter-spacing: 1px;
+         margin-top: 8px;
+
+         span {
+            font-size: 21px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            margin-right: 3px;
+         }
+      }
+   }
+}

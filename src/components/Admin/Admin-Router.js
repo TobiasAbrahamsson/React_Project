@@ -3,6 +3,7 @@ import AdminNavbar from './Admin-Navbar/Admin-Navbar';
 import AdminProfile from './Admin-Profile';
 import AdminAddProduct from './Admin-AddProduct/Admin-AddProduct';
 import AdminEditProduct from './Admin-EditProduct/Admin-EditProduct';
+import AdminEditProductPage from './Admin-EditProductPage/Admin-EditProductPage';
 import {
    BrowserRouter as Router,
    Switch,
@@ -24,7 +25,8 @@ class AdminRouter extends Component {
                   <Switch>
                      <Route path="/adminPage" exact component={AdminProfile} />
                      <Route path="/adminPage/addProduct" component={AdminAddProduct} />
-                     <Route path="/adminPage/editProduct" component={AdminEditProduct} />
+                     <Route path="/adminPage/editProduct" exact component={AdminEditProduct} />
+                     <Route path="/adminPage/editProduct/:id" component={AdminEditProductPage} />
                   </Switch>
                </div>
                :

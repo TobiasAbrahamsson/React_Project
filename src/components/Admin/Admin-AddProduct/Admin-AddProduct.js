@@ -17,8 +17,6 @@ class AdminAddProduct extends Component {
 
    async onSubmitToApi(e) {
       e.preventDefault();
-      //console.log(e.target.elements.file.files[0])
-      //this.setState({title: e.target.elements.title.value})
 
       const auth = localStorage.getItem("jwt");
       console.log(auth);
@@ -76,7 +74,7 @@ class AdminAddProduct extends Component {
                         <i className="fas fa-trash-alt" onClick={this.removeFile.bind(this)}></i>
                      </div>
                   }
-                  <button>Spara</button>
+                  <button>Upload</button>
                   {this.state.title}
                </form>
             </div>

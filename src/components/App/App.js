@@ -5,6 +5,7 @@ import Products from '../Products/Products';
 import Bookings from '../Bookings/Bookings';
 import AdminPage from '../Admin/Admin-Page';
 import FirebaseTest from '../Firebase/FirebaseTest';
+import UserPage from '../User/User-Page';
 
 import PageNotFound from '../PageNotFound/PageNotFound';
 import {
@@ -24,6 +25,7 @@ function App() {
                <Route path="/bookings" component={Bookings} />
                <Route path="/adminPage" component={AdminPage} />
                <Route path="/firebaseTest" component={FirebaseTest} />
+               <Route path="/userPage" component={UserPage} />
 
                <Route component={PageNotFound} />
             </Switch>

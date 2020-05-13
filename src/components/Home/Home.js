@@ -1,13 +1,33 @@
-import React from 'react';
+import React, { Component } from 'react';
+import ServiceCard from "../ServiceCard/ServiceCard";
+import axios from 'axios';
 
-const Home = () => {
-   return (
-      <div>
-         <h1>Home Page</h1>
-         <div className="card-container">
+class Home extends Component {
+   state = { services: [] };
+
+   async componentDidMount() {
+      const res = await axios.get("http://localhost:1337/services")
+
+      console.log(res.data);
+      this.setState({ services: res.data })
+   }
+
+   render() {
+      return (
+         <div className="home">
+            {this.state.services.map((service) =>
+               <ServiceCard
+                  key={service.id}
+                  docId={service.id}
+                  image={"http://localhost:1337" + service.image.url}
+                  title={service.title}
+                  price={service.price}
+                  description={service.description}
+               />
+            )}
          </div>
-      </div>
-   )
+      );
+   }
 }
 
 export default Home;

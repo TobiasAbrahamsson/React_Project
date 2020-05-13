@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 class AdminEditProduct extends Component {
    state = {
@@ -46,7 +47,20 @@ class AdminEditProduct extends Component {
                         <td className="tableDescription">{item.description}</td>
                         <td className="tablePrice">{item.price}</td>
                         <td className="tableEdit">
-                           <i className="fas fa-pen"></i>
+                           <Link
+                              to={{
+                                 pathname: `/adminPage/editProduct/${item.id}`,
+                                 params: {
+                                    id: item.id,
+                                    title: item.title,
+                                    description: item.description,
+                                    price: item.price,
+                                    image: item.image.url.substr(9, 999)
+                                 }
+                              }}
+                           >
+                              <i className="fas fa-pen"></i>
+                           </Link>
                         </td>
                         <td className="tableDelete">
                            <i className="fas fa-trash-alt" onClick={this.removeProduct.bind(this.setState = item.id)}></i>
@@ -55,7 +69,7 @@ class AdminEditProduct extends Component {
                   )}
                </tbody>
             </table>
-         </div>
+         </div >
       );
    }
 }
