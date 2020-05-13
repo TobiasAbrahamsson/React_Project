@@ -1,0 +1,114 @@
+.editProducts {
+   height: 83.5vh;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+
+   table {
+      background: lightgray;
+      width: 90%;
+      margin-top: 4vh;
+      border-spacing: 0;
+      cursor: default;
+      border: solid 2px rgb(173, 173, 173);
+
+      thead {
+         background: white;
+
+         th {
+            height: 7vh;
+         }
+      }
+
+      th {
+         height: 5vh;
+      }
+
+      td {
+         height: 5vh;
+      }
+
+      tr:nth-child(even) {
+         background-color: white;
+      }
+   }
+
+   .tableHeadId {
+      border-right: solid 2px rgb(173, 173, 173);
+   }
+
+   .tableHeadTitle {
+      border-right: solid 2px rgb(173, 173, 173);
+   }
+
+   .tableHeadDescription {
+      border-right: solid 2px rgb(173, 173, 173);
+   }
+
+   .tableHeadPrice {
+      border-right: solid 2px rgb(173, 173, 173);
+   }
+
+   .tableId {
+      width: 10%;
+      text-align: center;
+      border-top: solid 2px rgb(173, 173, 173);
+      border-right: solid 2px rgb(173, 173, 173);
+   }
+
+   .tableImage {
+      width: 10%;
+      text-align: center;
+      border-top: solid 2px rgb(173, 173, 173);
+      border-right: solid 2px rgb(173, 173, 173);
+
+      img {
+         height: 5vh;
+      }
+   }
+
+   .tableTitle {
+      width: 25%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      border-top: solid 2px rgb(173, 173, 173);
+      border-right: solid 2px rgb(173, 173, 173);
+      padding: 0 5px 0 5px;
+   }
+
+   .tableDescription {
+      max-width: 150px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      border-top: solid 2px rgb(173, 173, 173);
+      border-right: solid 2px rgb(173, 173, 173);
+      padding: 0 5px 0 5px;
+   }
+
+   .tablePrice {
+      width: 10%;
+      text-align: center;
+      border-top: solid 2px rgb(173, 173, 173);
+      border-right: solid 2px rgb(173, 173, 173);
+   }
+
+   .tableEdit {
+      width: 10%;
+      text-align: center;
+
+      i {
+         cursor: pointer;
+      }
+   }
+
+   .tableDelete {
+      width: 10%;
+      text-align: center;
+
+      i {
+         cursor: pointer;
+      }
+   }
+}

@@ -16,7 +16,7 @@
 
 .mainNavbar {
   background: lightcoral;
-  min-height: 10vh;
+  height: 10vh;
   padding-left: 30px;
   color: white;
   display: -webkit-box;
@@ -32,6 +32,7 @@
 }
 
 .navbarLinks {
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -64,6 +65,26 @@ li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: lightgray;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: gray;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #a3a3a3;
 }
 
 .card {
@@ -277,6 +298,7 @@ li {
   border: none;
   color: #919191;
   margin-top: 26vh;
+  outline: none;
 }
 
 .adminLogin div .register {
@@ -284,6 +306,7 @@ li {
   border: none;
   color: #919191;
   margin-top: 16.5vh;
+  outline: none;
 }
 
 .adminLogin div .buttonSpan {
@@ -326,8 +349,7 @@ li {
 
 .adminAddProduct .adminAddProductForm {
   background: white;
-  width: 80%;
-  max-width: 400px;
+  min-width: 450px;
   height: 75vh;
   border-radius: 10px;
   text-align: center;
@@ -473,6 +495,139 @@ li {
   text-transform: uppercase;
   color: white;
   outline: none;
+  cursor: pointer;
+}
+
+.logout {
+  position: absolute;
+  right: 5vh;
+}
+
+.logout button {
+  background: none;
+  border: none;
+  font-size: 23px;
+  font-weight: 600;
+  outline: none;
+  cursor: pointer;
+}
+
+.editProducts {
+  height: 83.5vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.editProducts table {
+  background: lightgray;
+  width: 90%;
+  margin-top: 4vh;
+  border-spacing: 0;
+  cursor: default;
+  border: solid 2px #adadad;
+}
+
+.editProducts table thead {
+  background: white;
+}
+
+.editProducts table thead th {
+  height: 7vh;
+}
+
+.editProducts table th {
+  height: 5vh;
+}
+
+.editProducts table td {
+  height: 5vh;
+}
+
+.editProducts table tr:nth-child(even) {
+  background-color: white;
+}
+
+.editProducts .tableHeadId {
+  border-right: solid 2px #adadad;
+}
+
+.editProducts .tableHeadTitle {
+  border-right: solid 2px #adadad;
+}
+
+.editProducts .tableHeadDescription {
+  border-right: solid 2px #adadad;
+}
+
+.editProducts .tableHeadPrice {
+  border-right: solid 2px #adadad;
+}
+
+.editProducts .tableId {
+  width: 10%;
+  text-align: center;
+  border-top: solid 2px #adadad;
+  border-right: solid 2px #adadad;
+}
+
+.editProducts .tableImage {
+  width: 10%;
+  text-align: center;
+  border-top: solid 2px #adadad;
+  border-right: solid 2px #adadad;
+}
+
+.editProducts .tableImage img {
+  height: 5vh;
+}
+
+.editProducts .tableTitle {
+  width: 25%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-top: solid 2px #adadad;
+  border-right: solid 2px #adadad;
+  padding: 0 5px 0 5px;
+}
+
+.editProducts .tableDescription {
+  max-width: 150px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-top: solid 2px #adadad;
+  border-right: solid 2px #adadad;
+  padding: 0 5px 0 5px;
+}
+
+.editProducts .tablePrice {
+  width: 10%;
+  text-align: center;
+  border-top: solid 2px #adadad;
+  border-right: solid 2px #adadad;
+}
+
+.editProducts .tableEdit {
+  width: 10%;
+  text-align: center;
+}
+
+.editProducts .tableEdit i {
+  cursor: pointer;
+}
+
+.editProducts .tableDelete {
+  width: 10%;
+  text-align: center;
+}
+
+.editProducts .tableDelete i {
   cursor: pointer;
 }
 

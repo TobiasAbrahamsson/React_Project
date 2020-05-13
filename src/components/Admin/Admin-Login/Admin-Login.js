@@ -29,7 +29,8 @@ class AdminLogin extends Component {
             console.log('User profile', response.data.user);
             console.log('User token', response.data.jwt);
 
-            this.props.userCredential(response.data.user)
+            this.props.userCredential(response.data.user, response.data.jwt);
+            window.location.reload(false);
          })
          .catch(error => {
             // Handle error.
@@ -51,7 +52,7 @@ class AdminLogin extends Component {
             console.log('User profile', response.data.user);
             console.log('User token', response.data.jwt);
 
-            this.props.userCredential(response.data.user)
+            this.props.userCredential(response.data.user, response.data.jwt);
          })
          .catch(error => {
             // Handle error.

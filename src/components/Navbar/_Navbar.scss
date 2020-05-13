@@ -1,6 +1,6 @@
 .mainNavbar {
-   background: lightcoral;
-   min-height: 10vh;
+   background: $primary;
+   height: 10vh;
    padding-left: 30px;
    color: white;
    display: flex;
@@ -12,6 +12,7 @@
 }
 
 .navbarLinks {
+   height: 100%;
    display: flex;
    justify-content: space-around;
    align-items: center;

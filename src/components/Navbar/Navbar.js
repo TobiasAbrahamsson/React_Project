@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Logo from '../../images/Logo.png';
+import Logout from '../Logout/Logout';
 
 function Navbar() {
    return (
@@ -12,6 +13,7 @@ function Navbar() {
             <Link style={{ textDecoration: 'none' }} to="/bookings"><li>My Bookings</li></Link>
             <Link style={{ textDecoration: 'none' }} to="/adminPage"><li>Admin Page</li></Link>
          </ul>
+         <Logout />
       </nav>
    );
 }

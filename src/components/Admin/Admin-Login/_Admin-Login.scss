@@ -84,7 +84,7 @@
          }
 
          button {
-            background: lightcoral;
+            background: $primary;
             width: 100%;
             height: 7vh;
             border: none;
@@ -103,12 +103,14 @@
          border: none;
          color: rgb(145, 145, 145);
          margin-top: 26vh;
+         outline: none;
       }
       .register {
          background: white;
          border: none;
          color: rgb(145, 145, 145);
          margin-top: 16.5vh;
+         outline: none;
       }
 
       .buttonSpan {

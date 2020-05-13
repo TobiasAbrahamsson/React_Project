@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import axios from "axios";
 
 class AdminAddProduct extends Component {
-
    state = {
       image: null
    }
@@ -21,24 +20,30 @@ class AdminAddProduct extends Component {
       //console.log(e.target.elements.file.files[0])
       //this.setState({title: e.target.elements.title.value})
 
+      const auth = localStorage.getItem("jwt");
+      console.log(auth);
+
       const res = await axios.post("http://localhost:1337/products", {
 
          title: e.target.elements.title.value,
          description: e.target.elements.description.value,
-         price: e.target.elements.price.value
-
+         price: e.target.elements.price.value,
+         Authorization: auth
       })
       console.log(res)
 
       const data = new FormData();
-
       data.append('files', this.state.image)
       data.append('ref', 'products')
       data.append('refId', res.data.id)
       data.append('field', 'image')
 
-      const resPic = await axios.post("http://localhost:1337/upload", data)
+      const resPic = await axios.post("http://localhost:1337/upload", data, {
+         Authorization: auth
+      }
+      );
       console.log(resPic)
+      alert("Product successfully uploaded!");
    }
 
    render() {

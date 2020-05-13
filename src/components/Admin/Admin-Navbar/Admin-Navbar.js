@@ -7,6 +7,7 @@ function AdminNavbar() {
          <ul>
             <Link style={{ textDecoration: 'none' }} to="/adminPage"><li>Profile</li></Link>
             <Link style={{ textDecoration: 'none' }} to="/adminPage/addProduct"><li>Add Product</li></Link>
+            <Link style={{ textDecoration: 'none' }} to="/adminPage/editProduct"><li>Edit Product</li></Link>
          </ul>
       </nav>
    );

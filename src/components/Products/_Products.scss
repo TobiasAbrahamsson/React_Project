@@ -4,3 +4,23 @@
    flex-wrap: wrap;
    justify-content: center;
 }
+
+/* width */
+::-webkit-scrollbar {
+   width: 10px;
+ }
+ 
+ /* Track */
+ ::-webkit-scrollbar-track {
+   background: lightgray; 
+ }
+  
+ /* Handle */
+ ::-webkit-scrollbar-thumb {
+   background: gray; 
+ }
+ 
+ /* Handle on hover */
+ ::-webkit-scrollbar-thumb:hover {
+   background: rgb(163, 163, 163); 
+ }
