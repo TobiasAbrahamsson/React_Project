@@ -10,15 +10,6 @@ class AdminEditProductPage extends Component {
       inputValueImage: ""
    }
 
-   beforeMount() {
-      window.addEventListener("beforeunload", event => {
-         if (!this.isEditing) return
-         event.preventDefault()
-         // Chrome requires returnValue to be set.
-         event.returnValue = ""
-      })
-   }
-
    eventChange(e) {
       console.log(e.target.files[0])
       this.setState({ image: e.target.files[0] })
