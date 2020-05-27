@@ -51,6 +51,22 @@ li {
   margin-left: 50px;
 }
 
+li:hover {
+  color: white;
+}
+
+#userPageButton {
+  color: black;
+  font-size: 4.5vh;
+  position: absolute;
+  right: 30px;
+  top: 2.7vh;
+}
+
+#userPageButton:hover {
+  color: white;
+}
+
 .home {
   width: 100%;
   display: -webkit-box;
@@ -167,6 +183,119 @@ li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+#notLoggedin {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 1;
+  display: none;
+}
+
+#notLoggedin .notLoggedinBackground {
+  background: black;
+  opacity: 0.6;
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  z-index: -1;
+}
+
+#notLoggedin .notLoggedinInfo {
+  max-width: 600px;
+  margin: 20vh auto 0 auto;
+}
+
+#notLoggedin .notLoggedinInfo .notLoggedinInfoMain {
+  background: white;
+  height: 40vh;
+  padding: 5vh 0 0 8vh;
+  cursor: default;
+}
+
+#notLoggedin .notLoggedinInfo .notLoggedinInfoMain h5 {
+  color: #061C4E;
+  font-size: 5vh;
+  font-weight: 700;
+  margin-bottom: 2vh;
+  line-height: 5vh;
+}
+
+#notLoggedin .notLoggedinInfo .notLoggedinInfoMain p {
+  color: #061C4E;
+  margin-bottom: 4vh;
+}
+
+#notLoggedin .notLoggedinInfo .notLoggedinInfoMain div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+#notLoggedin .notLoggedinInfo .notLoggedinInfoMain div div {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#notLoggedin .notLoggedinInfo .notLoggedinInfoMain div div p {
+  color: #073fc2;
+  font-size: 3vh;
+  font-weight: 400;
+  margin: 0;
+  font-style: italic;
+  font-family: "Prata";
+}
+
+#notLoggedin .notLoggedinInfo .notLoggedinInfoMain div div button {
+  color: #073fc2;
+  background: none;
+  border: none;
+  font-size: 3vh;
+  text-transform: uppercase;
+  white-space: nowrap;
+  cursor: pointer;
+  font-style: italic;
+  outline: none;
+}
+
+#notLoggedin .notLoggedinInfo .notLoggedinInfoMain div div button:hover {
+  color: #061C4E;
+}
+
+#notLoggedin .notLoggedinInfo .notLoggedinInfoMain div div button span {
+  font-size: 4vh;
+}
+
+#notLoggedin .notLoggedinInfo .notLoggedinInfoMain div #notLoggedinInfoMainSignin {
+  padding-left: 70px;
+}
+
+#notLoggedin .notLoggedinInfo .notLoggedinInfoFotter {
+  background: #0c0920;
+  height: 7vh;
+  width: 100%;
+}
+
+#notLoggedin .notLoggedinInfo .notLoggedinInfoFotter button {
+  background: none;
+  position: 0;
+  margin: -0.5vh 550px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  font-size: 6vh;
+  font-weight: 400;
+  color: white;
+  outline: none;
+}
+
+#notLoggedin .notLoggedinInfo .notLoggedinInfoFotter button:hover {
+  color: #8f8f8f;
 }
 
 /* width */
@@ -637,6 +766,7 @@ li {
   border-spacing: 0;
   cursor: default;
   border: solid 2px #adadad;
+  border-collapse: collapse;
 }
 
 .editProducts table thead {
@@ -649,6 +779,7 @@ li {
 
 .editProducts table th {
   height: 5vh;
+  border: solid 2px #adadad;
 }
 
 .editProducts table td {
@@ -657,22 +788,6 @@ li {
 
 .editProducts table tr:nth-child(even) {
   background-color: white;
-}
-
-.editProducts .tableHeadId {
-  border-right: solid 2px #adadad;
-}
-
-.editProducts .tableHeadTitle {
-  border-right: solid 2px #adadad;
-}
-
-.editProducts .tableHeadDescription {
-  border-right: solid 2px #adadad;
-}
-
-.editProducts .tableHeadPrice {
-  border-right: solid 2px #adadad;
 }
 
 .editProducts .tableId {
@@ -737,6 +852,124 @@ li {
 
 .editProducts .tableDelete i {
   cursor: pointer;
+}
+
+.userProfile {
+  background: greenyellow;
+}
+
+.myBookings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.myBookings h2 {
+  color: white;
+  margin: 5vh 0 1vh 0;
+  font-size: 4vh;
+}
+
+.myBookings table {
+  background: lightgray;
+  width: 60%;
+  border-collapse: collapse;
+  border: solid 2px #adadad;
+}
+
+.myBookings table th {
+  background: white;
+  border: solid 2px #adadad;
+}
+
+.myBookings table th span {
+  color: #646464;
+  margin-left: 2px;
+}
+
+.myBookings table td {
+  border: solid 2px #adadad;
+  padding-left: 4px;
+}
+
+.myBookings table tr:nth-child(even) {
+  background-color: white;
+}
+
+.myBookings table #bookingsTableDescription {
+  max-width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.myBookings table #bookingsTablePrice {
+  text-align: center;
+}
+
+.purchasedProducts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.purchasedProducts h2 {
+  color: white;
+  margin: 4vh 0 1vh 0;
+  font-size: 4vh;
+}
+
+.purchasedProducts table {
+  background: lightgray;
+  width: 60%;
+  padding: 0;
+  margin: 0;
+  border-collapse: collapse;
+  border: solid 2px #adadad;
+}
+
+.purchasedProducts table th {
+  background: white;
+  border: solid 2px #adadad;
+}
+
+.purchasedProducts table th span {
+  color: #646464;
+  margin-left: 2px;
+}
+
+.purchasedProducts table td {
+  border: solid 2px #adadad;
+  padding-left: 4px;
+}
+
+.purchasedProducts table tr:nth-child(even) {
+  background-color: white;
+}
+
+.purchasedProducts table #productTableDescription {
+  max-width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.purchasedProducts table #productTablePrice {
+  text-align: center;
 }
 
 .pageNotFound {

@@ -18,7 +18,7 @@ class Home extends Component {
             {this.state.services.map((service) =>
                <ServiceCard
                   key={service.id}
-                  docId={service.id}
+                  collectionId={service.id}
                   image={"http://localhost:1337" + service.image.url}
                   title={service.title}
                   price={service.price}

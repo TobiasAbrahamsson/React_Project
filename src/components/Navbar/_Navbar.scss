@@ -24,4 +24,18 @@
 li {
    color: black;
    margin-left: 50px;
+   &:hover {
+      color: white;
+   }
+}
+
+#userPageButton {
+   color: black;
+   font-size: 4.5vh;
+   position: absolute;
+   right: 30px;
+   top: 2.7vh;
+   &:hover {
+      color: white;
+   }
 }

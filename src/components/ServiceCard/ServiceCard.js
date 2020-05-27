@@ -4,9 +4,17 @@ import firebase from "../Firebase/FirebaseConfig";
 class ServiceCard extends Component {
 
    onClickSaveToFirestore() {
-      const docRef = firebase.firestore().collection("booking").doc(this.props.docId.toString());
+      const userfromLocal = localStorage.getItem("user");
+      console.log(userfromLocal);
+      var user = firebase.auth().currentUser;
+      console.log(user);
+      console.log(user.displayName);
+
+      const docRef = firebase.firestore().collection("users").doc(user.uid.toString())
+         .collection("bookings").doc(this.props.collectionId.toString());
 
       docRef.set({
+         id: this.props.collectionId,
          title: this.props.title,
          description: this.props.description,
          price: this.props.price

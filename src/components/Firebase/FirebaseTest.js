@@ -10,6 +10,7 @@ class FirebaseTest extends Component {
       const db = firebase.firestore();
       const docRef = db.collection("booking").doc("info")
       const docRef2 = db.collection("booking").doc("info2")
+      const docRef3 = db.collection("booking").doc("info3").collection("bookings").doc("booking1")
 
       docRef.get().then(booking => {
          if (booking.exists) {
@@ -23,11 +24,15 @@ class FirebaseTest extends Component {
       //write data in firebase
       docRef.set({
          item: "test",
-         price: 2000
+         price: "2000"
       })
       docRef2.set({
          item: "test 2",
-         price: 3000
+         price: "3000"
+      })
+      docRef3.set({
+         title: "test",
+         price: 400
       })
    }
 

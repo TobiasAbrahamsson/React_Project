@@ -2,10 +2,11 @@ import React from 'react';
 import Navbar from '../Navbar/Navbar';
 import Home from '../Home/Home';
 import Products from '../Products/Products';
-import Bookings from '../Bookings/Bookings';
+import Contact from '../Contact/Contact';
 import AdminPage from '../Admin/Admin-Page';
 import FirebaseTest from '../Firebase/FirebaseTest';
 import UserPage from '../User/User-Page';
+import UserUpdateProfile from '../User/User-UpdateProfile/User-UpdateProfile';
 
 import PageNotFound from '../PageNotFound/PageNotFound';
 import {
@@ -22,10 +23,11 @@ function App() {
             <Switch>
                <Route path="/" exact component={Home} />
                <Route path="/products" exact component={Products} />
-               <Route path="/bookings" component={Bookings} />
+               <Route path="/contact" component={Contact} />
                <Route path="/adminPage" component={AdminPage} />
                <Route path="/firebaseTest" component={FirebaseTest} />
-               <Route path="/userPage" component={UserPage} />
+               <Route path="/userPage" exact component={UserPage} />
+               <Route path="/userPage/updateProfile" component={UserUpdateProfile} />
 
                <Route component={PageNotFound} />
             </Switch>

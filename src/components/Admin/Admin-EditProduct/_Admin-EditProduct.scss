@@ -11,6 +11,7 @@
       border-spacing: 0;
       cursor: default;
       border: solid 2px rgb(173, 173, 173);
+      border-collapse: collapse;
 
       thead {
          background: white;
@@ -22,6 +23,7 @@
 
       th {
          height: 5vh;
+         border: solid 2px rgb(173, 173, 173);
       }
 
       td {
@@ -31,22 +33,6 @@
       tr:nth-child(even) {
          background-color: white;
       }
-   }
-
-   .tableHeadId {
-      border-right: solid 2px rgb(173, 173, 173);
-   }
-
-   .tableHeadTitle {
-      border-right: solid 2px rgb(173, 173, 173);
-   }
-
-   .tableHeadDescription {
-      border-right: solid 2px rgb(173, 173, 173);
-   }
-
-   .tableHeadPrice {
-      border-right: solid 2px rgb(173, 173, 173);
    }
 
    .tableId {

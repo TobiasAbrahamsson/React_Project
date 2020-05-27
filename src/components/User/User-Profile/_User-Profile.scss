@@ -1,0 +1,103 @@
+.userProfile {
+   background: greenyellow;
+}
+
+.myBookings {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   
+   h2 {
+      color: white;
+      margin: 5vh 0 1vh 0;
+      font-size: 4vh;
+   }
+
+   table {
+      background: lightgray;
+      width: 60%;
+      border-collapse: collapse;
+      border: solid 2px rgb(173, 173, 173);
+
+      th {
+         background: white;
+         border: solid 2px rgb(173, 173, 173);
+
+         span {
+            color: rgb(100, 100, 100);
+            margin-left: 2px;
+         }
+      }
+
+      td {
+         border: solid 2px rgb(173, 173, 173);
+         padding-left: 4px;
+      }
+
+      tr:nth-child(even) {
+         background-color: white;
+      }
+
+      #bookingsTableDescription {
+         max-width: 200px;
+         white-space: nowrap;
+         overflow: hidden;
+         text-overflow: ellipsis;
+      }
+
+      #bookingsTablePrice {
+         text-align: center;
+      }
+   }
+}
+
+.purchasedProducts {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+   h2 {
+      color: white;
+      margin: 4vh 0 1vh 0;
+      font-size: 4vh;
+   }
+
+   table {
+      background: lightgray;
+      width: 60%;
+      padding: 0;
+      margin: 0;
+      border-collapse: collapse;
+      border: solid 2px rgb(173, 173, 173);
+
+      th {
+         background: white;
+         border: solid 2px rgb(173, 173, 173);
+
+         span {
+            color: rgb(100, 100, 100);
+            margin-left: 2px;
+         }
+      }
+
+      td {
+         border: solid 2px rgb(173, 173, 173);
+         padding-left: 4px;
+      }
+
+      tr:nth-child(even) {
+         background-color: white;
+      }
+
+      #productTableDescription {
+         max-width: 200px;
+         white-space: nowrap;
+         overflow: hidden;
+         text-overflow: ellipsis;
+      }
+
+      #productTablePrice {
+         text-align: center;
+      }
+   }
+}
