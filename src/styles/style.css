@@ -203,19 +203,19 @@ li:hover {
   z-index: -1;
 }
 
-#notLoggedin .notLoggedinInfo {
+#notLoggedin #notLoggedinInfo {
   max-width: 600px;
   margin: 20vh auto 0 auto;
 }
 
-#notLoggedin .notLoggedinInfo .notLoggedinInfoMain {
+#notLoggedin #notLoggedinInfo .notLoggedinInfoMain {
   background: white;
   height: 40vh;
   padding: 5vh 0 0 8vh;
   cursor: default;
 }
 
-#notLoggedin .notLoggedinInfo .notLoggedinInfoMain h5 {
+#notLoggedin #notLoggedinInfo .notLoggedinInfoMain h5 {
   color: #061C4E;
   font-size: 5vh;
   font-weight: 700;
@@ -223,26 +223,26 @@ li:hover {
   line-height: 5vh;
 }
 
-#notLoggedin .notLoggedinInfo .notLoggedinInfoMain p {
+#notLoggedin #notLoggedinInfo .notLoggedinInfoMain p {
   color: #061C4E;
   margin-bottom: 4vh;
 }
 
-#notLoggedin .notLoggedinInfo .notLoggedinInfoMain div {
+#notLoggedin #notLoggedinInfo .notLoggedinInfoMain div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
 }
 
-#notLoggedin .notLoggedinInfo .notLoggedinInfoMain div div {
+#notLoggedin #notLoggedinInfo .notLoggedinInfoMain div div {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
 }
 
-#notLoggedin .notLoggedinInfo .notLoggedinInfoMain div div p {
+#notLoggedin #notLoggedinInfo .notLoggedinInfoMain div div p {
   color: #073fc2;
   font-size: 3vh;
   font-weight: 400;
@@ -251,7 +251,7 @@ li:hover {
   font-family: "Prata";
 }
 
-#notLoggedin .notLoggedinInfo .notLoggedinInfoMain div div button {
+#notLoggedin #notLoggedinInfo .notLoggedinInfoMain div div button {
   color: #073fc2;
   background: none;
   border: none;
@@ -263,25 +263,89 @@ li:hover {
   outline: none;
 }
 
-#notLoggedin .notLoggedinInfo .notLoggedinInfoMain div div button:hover {
+#notLoggedin #notLoggedinInfo .notLoggedinInfoMain div div button:hover {
   color: #061C4E;
 }
 
-#notLoggedin .notLoggedinInfo .notLoggedinInfoMain div div button span {
+#notLoggedin #notLoggedinInfo .notLoggedinInfoMain div div button span {
   font-size: 4vh;
 }
 
-#notLoggedin .notLoggedinInfo .notLoggedinInfoMain div #notLoggedinInfoMainSignin {
+#notLoggedin #notLoggedinInfo .notLoggedinInfoMain div #notLoggedinInfoMainSignin {
   padding-left: 70px;
 }
 
-#notLoggedin .notLoggedinInfo .notLoggedinInfoFotter {
+#notLoggedin #notLoggedinInfo .contactModal {
+  display: block;
+  background: white;
+  font-size: 15px;
+}
+
+#notLoggedin #notLoggedinInfo .contactModal p {
+  width: auto;
+  padding: 3vh 0 1vh 8vh;
+  color: #073fc2;
+}
+
+#notLoggedin #notLoggedinInfo .contactModal p span {
+  cursor: pointer;
+  font-weight: 700;
+  text-decoration: underline;
+  color: #061C4E;
+}
+
+#notLoggedin #notLoggedinInfo .contactModal p span:hover {
+  color: #073fc2;
+}
+
+#notLoggedin #notLoggedinInfo .contactModal #contactModalForm {
+  display: none;
+  margin: 1vh 0 0 0;
+}
+
+#notLoggedin #notLoggedinInfo .contactModal #contactModalForm input {
+  background: white;
+  border: solid 1px gray;
+  padding: 2vh 0 2vh 2vh;
+  width: 80%;
+  margin: 0 0 2vh 8vh;
+  border-radius: 5px;
+}
+
+#notLoggedin #notLoggedinInfo .contactModal #contactModalForm textarea {
+  background: white;
+  border: solid 1px gray;
+  padding: 2vh 0 2vh 2vh;
+  width: 80%;
+  margin: 0 0 2vh 8vh;
+  border-radius: 5px;
+}
+
+#notLoggedin #notLoggedinInfo .contactModal #contactModalForm button {
+  background: white;
+  border: solid 1px #073fc2;
+  padding: 2vh 0 2vh 0;
+  margin: 0 0 2vh 38%;
+  border-radius: 20px;
+  letter-spacing: 1px;
+  width: 24%;
+  cursor: pointer;
+  color: #073fc2;
+  outline: none;
+}
+
+#notLoggedin #notLoggedinInfo .contactModal #contactModalForm button:hover {
+  background: #073fc2;
+  color: white;
+}
+
+#notLoggedin #notLoggedinInfo .notLoggedinInfoFotter {
   background: #0c0920;
   height: 7vh;
   width: 100%;
 }
 
-#notLoggedin .notLoggedinInfo .notLoggedinInfoFotter button {
+#notLoggedin #notLoggedinInfo .notLoggedinInfoFotter button {
   background: none;
   position: 0;
   margin: -0.5vh 550px;
@@ -294,7 +358,7 @@ li:hover {
   outline: none;
 }
 
-#notLoggedin .notLoggedinInfo .notLoggedinInfoFotter button:hover {
+#notLoggedin #notLoggedinInfo .notLoggedinInfoFotter button:hover {
   color: #8f8f8f;
 }
 

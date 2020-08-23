@@ -22,7 +22,7 @@
       z-index: -1;
    }
 
-   .notLoggedinInfo {
+   #notLoggedinInfo {
       max-width: 600px;
       margin: 20vh auto 0 auto;
 
@@ -84,6 +84,70 @@
 
             #notLoggedinInfoMainSignin {
                padding-left: 70px;
+            }
+         }
+      }
+
+      .contactModal {
+         display: block;
+         background: white;
+         font-size: 15px;
+
+         p {
+            width: auto;
+            padding: 3vh 0 1vh 8vh;
+            color: rgb(7, 63, 194);
+
+            span {
+               cursor: pointer;
+               font-weight: 700;
+               text-decoration: underline;
+               color: #061C4E;
+
+               &:hover {
+                  color: rgb(7, 63, 194);
+               }
+            }
+         }
+
+         #contactModalForm {
+            display: none;
+            margin: 1vh 0 0 0;
+
+            input {
+               background: white;
+               border: solid 1px gray;
+               padding: 2vh 0 2vh 2vh;
+               width: 80%;
+               margin: 0 0 2vh 8vh;
+               border-radius: 5px;
+            }
+            
+            textarea {
+               background: white;
+               border: solid 1px gray;
+               padding: 2vh 0 2vh 2vh;
+               width: 80%;
+               margin: 0 0 2vh 8vh;
+               border-radius: 5px;
+            }
+
+            button{
+               background: white;
+               border: solid 1px rgb(7, 63, 194);
+               padding: 2vh 0 2vh 0;
+               margin: 0 0 2vh 38%;
+               border-radius: 20px;
+               letter-spacing: 1px;
+               width: 24%;
+               cursor: pointer;
+               color: rgb(7, 63, 194);
+               outline: none;
+
+               &:hover {
+                  background: rgb(7, 63, 194);
+                  color: white;
+               }
             }
          }
       }

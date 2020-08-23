@@ -4,15 +4,17 @@ import 'firebase/auth';
 
 require('dotenv').config()
 const firebaseConfig = {
-   apiKey: "AIzaSyAhB-5dAlLOH_oL6SExd4AeaoaL0gkFpZ0",
-   authDomain: "klassprojekt-2df35.firebaseapp.com",
-   databaseURL: "https://klassprojekt-2df35.firebaseio.com",
+   apiKey: process.env.REACT_APP_API_KEY,
+   authDomain: process.env.REACT_APP_AUTHDOMAIN,
+   databaseURL: process.env.REACT_APP_DATABASEURL,
    projectId: "klassprojekt-2df35",
-   storageBucket: "klassprojekt-2df35.appspot.com",
-   messagingSenderId: "253211654767",
-   appId: "1:253211654767:web:c97ad51dcd00312a18eb9a",
-   measurementId: "G-W6NVCL5E5F"
+   storageBucket: process.env.REACT_APP_STORAGEBUCKET,
+   messagingSenderId: process.env.REACT_APP_MESSAGINGSENDERID,
+   appId: process.env.REACT_APP_APPID,
+   measurementId: process.env.REACT_APP_MEASUREMENTID
 };
+
+console.log(process.env)
 
 firebase.initializeApp(firebaseConfig);
 
